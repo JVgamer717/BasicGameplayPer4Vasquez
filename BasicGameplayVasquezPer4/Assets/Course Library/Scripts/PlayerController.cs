@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         hoirzontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * hoirzontalInput * Time.deltaTime * speed);
 
-        verticalInput = Input.GetAxis("vertical");
+        verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
         if (transform.position.x > xRange)
         {
